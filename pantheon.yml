@@ -1,0 +1,8 @@
+api_version: 1
+
+workflows:
+  deploy_product:
+    after:
+      - type: webphp
+        description: Import configuration after site creation
+        script: private/scripts/wp_cfm_after_deploy_product.php
